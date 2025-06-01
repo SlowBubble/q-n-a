@@ -73,6 +73,17 @@ function setupKeyboardControl(storyStateMgr) {
       storyStateMgr.moveToPreviousStory();
     }
   };
+  
+  // Add touch support
+  document.body.addEventListener('touchstart', (evt) => {
+    evt.preventDefault(); // Prevent double-firing on some devices
+    storyStateMgr.readWordAndMoveToNextWord();
+  });
+  // Add touch support
+  document.body.addEventListener('click', (evt) => {
+    evt.preventDefault(); // Prevent double-firing on some devices
+    storyStateMgr.readWordAndMoveToNextWord();
+  });
 }
 
 function shuffleArray(array) {
