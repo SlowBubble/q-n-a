@@ -12,7 +12,7 @@ function capitalizeFirstLetter(string) {
 function main() {
   const paramsMap = getUrlParamsMap();
   const nameReplacements = [];
-  let readPhrase = false;
+  let readPhrase = true;
   let readSentence = false;
   let shuffleStories = false;
   let startIndex = 0;
@@ -21,11 +21,9 @@ function main() {
     if (!possName || !key) {
       return;
     }
-    if (key === 'read_phrase') {
-      readPhrase = true;
-    }
     if (key === 'read_sentence') {
       readSentence = true;
+      readPhrase = false;
     }
     if (key === 'shuffle_stories') {
       shuffleStories = true;

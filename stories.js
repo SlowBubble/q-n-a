@@ -1,99 +1,146 @@
-
 export const stories = [
 `
-Jacob loves|his scooter.
-He rides the scooter|to the schoolyard.
-He rides the scooter|around the schoolyard.
-And he rides the scooter|home.
+What makes you happy?
+Good question.
+Let me think.
+Playing with my brother|makes me happy.
 `,
 `
-isGirlStory=1
-Mommy gives Emma|a puppet.
-Emma calls the puppet|Mr. Lion.
-Jacob hugs Mr. Lion.
-Daddy puts Mr. Lion|into the toy box.
+What makes you sad?
+Good question.
+Let me think.
+Falling down on the ground|makes me sad.
 `,
 `
-Jacob climbs up|the ladder.
-Emma climbs up|the helix.
-Jacob goes down|the slide.
-Emma follows Jacob|down the slide.
+What do you like to eat for breakfast?
+Good question.
+Let me think.
+I like to eat apples|for breakfast.
 `,
 `
-isGirlStory=1
-Emma and Jacob|want to|go outside.
-Daddy brings Emma|outside.
-Mommy brings Jacob|outside.
-They meet|in the playground.
+What do you like to eat for lunch?
+Good question.
+Let me think.
+I like to eat eggs|for lunch.
 `,
 `
-isGirlStory=1
-Grandma gives Emma|a baby doll.
-Emma carries the baby doll|to her room.
-Jacob hugs the baby doll.
-Daddy puts the baby doll|in the bookshelf.
+What is your favorite color?
+Good question.
+Let me think.
+My favorite color is blue.
 `,
 `
-Daddy takes Emma|to the cafe|by scooter.
-Mommy takes Jacob|to the cafe|by bike.
-Emma and Jacob|eat some eggs.
-Mommy and Daddy|eat some salad.
+What do you like to do on weekends?
+Good question.
+Let me think.
+I like to ride my scooter|on weekends.
 `,
 `
-It is raining.
-Jacob wants to|go outside.
-Daddy says no.
-Jacob starts to cry.
+What is your favorite animal?
+Good question.
+Let me think.
+My favorite animals are cats
 `,
 `
-Emma and Daddy|ride the scooter.
-Jacob and Mommy|ride the bike.
-They meet|at Harvard Yard.
-They ride|on the see-saw.
+What do you want to be when you grow up?
+Good question.
+Let me think.
+I want to be a teacher|when I grow up.
 `,
 `
-Jacob sees a dinosaur|on the park bench.
-Emma picks up|the dinosaur.
-Jacob climbs up|the ladder.
-Emma gives the dinosaur|to Jacob.
+What games do you like to play?
+Good question.
+Let me think.
+Hide and seek|is my favorite game.
 `,
 `
-Emma and Jacob|visit Ellie and Luke.
-They play with|Ellie's dolls|and Luke's dinosaurs.
-They eat|some mooncakes|and some ice cream.
-They say goodbye|to Ellie and Luke,|and they ride the T|home.
+What is your favorite season?
+Good question.
+Let me think.
+My favorite season is summer.
 `,
 `
-isGirlStory=1
-Mommy and Emma|ride the T|to the cafe.
-Daddy and Jacob|ride the bike|to the cafe.
-Uncle Keanu and his family|drive to the cafe.
-They all|arrive at the cafe|at the same time!
+What makes you laugh?
+Good question.
+Let me think.
+Funny jokes|make me laugh.
 `,
 `
-Ellie and Luke|visit Emma and Jacob.
-They eat lunch|at the cafe.
-They take a walk|in the garden.
-And they play|in the game room.
+What is your favorite book?
+Good question.
+Let me think.
+The Cat in the Hat|is my favorite book.
 `,
 `
-isGirlStory=1
-Auntie Sophia|visits Emmy and Jason.
-She gives Jacob|an apple.
-She gives Emma|an orange.
-Emma says|thank you.
+What do you like to drink after dinner?
+Good question.
+Let me think.
+I like to drink kefir|after dinner.
 `,
 `
-Daddy gives Emma and Jacob|some puzzles.
-They look at|the animals|in the puzzles.
-They play with|the puzzles.
-They give the puzzles| back to Daddy.
+What is your favorite place?
+Good question.
+Let me think.
+My favorite place is the playground.
 `,
 `
-isGirlStory=1
-Daddy takes Emma|to school.
-Emma says goodbye|to Daddy.
-Emma says hello|to her teachers.
-Emma says hello|to her friends.
+What is your favorite hobby?
+Good question.
+Let me think.
+Drawing pictures|is my favorite hobby.
 `,
+`
+What scares you the most?
+Good question.
+Let me think.
+Small dogs scare me the most.
+`,
+`
+What do you like to do after school?
+Good question.
+Let me think.
+I like to play with my brother|after school.
+`,
+`
+What is your favorite movie?
+Good question.
+Let me think.
+My favorite movie is frozen.
+`,
+`
+What makes you proud?
+Good question.
+Let me think.
+Helping others|makes me proud.
+`,
+`
+What do you like about rainy days?
+Good question.
+Let me think.
+I like jumping in puddles|on rainy days.
+`,
+`
+What is your favorite sport?
+Good question.
+Let me think.
+My favorite sport is running.
+`,
+`
+What do you like about school?
+Good question.
+Let me think.
+I like learning new things|at school.
+`,
+`
+What is your favorite toy?
+Good question.
+Let me think.
+My favorite toy is the baby doll.
+`,
+`
+What do you dream about?
+Good question.
+Let me think.
+I dream about flying in the sky.
+`
 ];
