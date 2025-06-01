@@ -9,6 +9,23 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+function createReadButton() {
+  const button = document.createElement('button');
+  button.textContent = 'Read';
+  button.style.position = 'fixed';
+  button.style.bottom = '20px';
+  button.style.right = '20px';
+  button.style.padding = '15px 30px';
+  button.style.fontSize = '18px';
+  button.style.borderRadius = '8px';
+  button.style.backgroundColor = '#007bff';
+  button.style.color = 'white';
+  button.style.border = 'none';
+  button.style.cursor = 'pointer';
+  button.style.zIndex = '1000';
+  return button;
+}
+
 function main() {
   const paramsMap = getUrlParamsMap();
   const nameReplacements = [];
@@ -48,6 +65,11 @@ function main() {
   const storyCard = new StoryCard();
   document.body.appendChild(storyCard);
   const storyStateMgr = new StoryStateMgr(storyCard);
+
+  // Add read button
+  const readButton = createReadButton();
+  document.body.appendChild(readButton);
+  readButton.onclick = () => storyStateMgr.readWordAndMoveToNextWord();
 
   let storiesClone = [...stories];
   if (startIndex) {
