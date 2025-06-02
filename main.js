@@ -12,18 +12,22 @@ function capitalizeFirstLetter(string) {
 function createReadButton() {
   const button = document.createElement('button');
   button.textContent = 'Read';
-  button.style.position = 'fixed';
-  button.style.bottom = '20px';
-  button.style.right = '20px';
-  button.style.padding = '15px 30px';
-  button.style.fontSize = '18px';
-  button.style.borderRadius = '8px';
+  button.style.width = '50%';
+  button.style.height = '240px';  // 120px * 4
+  button.style.position = 'static';
+  button.style.margin = '20px 0';
+  button.style.padding = '80px';  // 20px * 4
+  button.style.fontSize = '96px';  // 24px * 4
+  button.style.borderRadius = '32px';  // 8px * 4
   button.style.backgroundColor = '#007bff';
   button.style.color = 'white';
   button.style.border = 'none';
   button.style.cursor = 'pointer';
-  button.style.zIndex = '1000';
   return button;
+}
+
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
 function main() {
@@ -66,10 +70,12 @@ function main() {
   document.body.appendChild(storyCard);
   const storyStateMgr = new StoryStateMgr(storyCard);
 
-  // Add read button
-  const readButton = createReadButton();
-  document.body.appendChild(readButton);
-  readButton.onclick = () => storyStateMgr.readWordAndMoveToNextWord();
+  // Add read button only for mobile
+  if (isMobileDevice()) {
+    const readButton = createReadButton();
+    document.body.appendChild(readButton);
+    readButton.onclick = () => storyStateMgr.readWordAndMoveToNextWord();
+  }
 
   let storiesClone = [...stories];
   if (startIndex) {
@@ -96,16 +102,17 @@ function setupKeyboardControl(storyStateMgr) {
     }
   };
   
-  // Add touch support
-  document.body.addEventListener('touchstart', (evt) => {
-    evt.preventDefault(); // Prevent double-firing on some devices
-    storyStateMgr.readWordAndMoveToNextWord();
-  });
-  // Add touch support
-  document.body.addEventListener('click', (evt) => {
-    evt.preventDefault(); // Prevent double-firing on some devices
-    storyStateMgr.readWordAndMoveToNextWord();
-  });
+  // Add touch support only for mobile
+  if (isMobileDevice()) {
+    document.body.addEventListener('touchstart', (evt) => {
+      evt.preventDefault();
+      storyStateMgr.readWordAndMoveToNextWord();
+    });
+    document.body.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      storyStateMgr.readWordAndMoveToNextWord();
+    });
+  }
 }
 
 function shuffleArray(array) {
